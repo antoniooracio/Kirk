@@ -15,7 +15,7 @@ namespace HADeveloper.Date.ORM
         public DbSet<Cidade> Cidade { get; set; }
         public DbSet<Bairro> Bairro { get; set; }
         public DbSet<Eleitor> Eleitor { get; set; }
-        //public DbSet<Candidato> Candidato { get; set; }
+        public DbSet<Visita> Visista { get; set; }
         //public DbSet<Eleitor> Eleitor { get; set; }
 
 

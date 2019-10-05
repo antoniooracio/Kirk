@@ -33,7 +33,7 @@ namespace HADev.Delivery.Domain.Models
 
         public virtual Estado Estado { get; set; }
         public virtual Cidade Cidade { get; set; }
-        //public virtual ICollection<Membros> membro { get; set; }
+        public virtual ICollection<Eleitor> Eleitor { get; set; }
         //public virtual ICollection<Parceiros> parceiro { get; set; }
         //public virtual ICollection<ContasReceber> ContasReceber { get; set; }
     }

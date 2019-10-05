@@ -4,14 +4,16 @@ using HADeveloper.Date.ORM;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HADev.Delivery.Date.Migrations
 {
     [DbContext(typeof(HADeveloperDBContext))]
-    partial class HADeveloperDBContextModelSnapshot : ModelSnapshot
+    [Migration("20191005143141_EleitorVisita")]
+    partial class EleitorVisita
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

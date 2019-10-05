@@ -22,5 +22,7 @@ namespace HADev.Delivery.Domain.Models
         public string Nome { get; set; }
 
         public virtual Estado Estado { get; set; }
+        public virtual ICollection<Bairro> bairro { get; set; }
+        public virtual ICollection<Eleitor> Eleitor { get; set; }
     }
 }

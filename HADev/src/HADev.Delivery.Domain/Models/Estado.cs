@@ -22,8 +22,8 @@ namespace HADev.Delivery.Domain.Models
         public string UF { get; set; }
 
         public virtual ICollection<Cidade> cidade { get; set; }
-        //public virtual ICollection<Bairro> bairro { get; set; }
-        //public virtual ICollection<Eleitor> eleitor { get; set; }
+        public virtual ICollection<Bairro> bairro { get; set; }
+        public virtual ICollection<Eleitor> Eleitor { get; set; }
         //public virtual ICollection<Candidato> candidato { get; set; }
     }
 }
