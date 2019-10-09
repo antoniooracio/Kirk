@@ -1,7 +1,10 @@
-﻿using HADev.Delivery.Domain.Enums;
+﻿
+
+using HADev.Delivery.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+
 using System.Text;
 
 namespace HADev.Delivery.Domain.Models
@@ -56,9 +59,9 @@ namespace HADev.Delivery.Domain.Models
 
 
         [Display(Name = "Telefone")]
-       public string Telefone { get; set; }
+        public string Telefone { get; set; }
 
-        
+
 
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
@@ -72,9 +75,8 @@ namespace HADev.Delivery.Domain.Models
         [Display(Name = "Data de Cadastro")]
         public DateTime DataCadastro { get; set; }
 
-        [Display(Name = "Estado Cívil")]
-        [Required(ErrorMessage = " O Campo {0} é Obrigatório!")]
-        public EstadoCivil EstadoCivil { get; set; }
+       
+        public Enums.EstadoCivil EstadoCivil { get; set; }
 
         [Required(ErrorMessage = " O Campo {0} é Obrigatório!")]
         [Display(Name = "Data de Nascimento")]

@@ -1,4 +1,5 @@
-﻿@model HADev.Delivery.Domain.Models.Eleitor
+﻿@using HADev.Delivery.Domain.Enums
+@model HADev.Delivery.Domain.Models.Eleitor
 
 @{
     ViewData["Title"] = "Create";
@@ -30,15 +31,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="EstadoId" class="control-label"></label>
-                <select asp-for="EstadoId" class ="form-control" asp-items="ViewBag.EstadoId"></select>
+                <select asp-for="EstadoId" class="form-control" asp-items="ViewBag.EstadoId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="CidadeId" class="control-label"></label>
-                <select asp-for="CidadeId" class ="form-control" asp-items="ViewBag.CidadeId"></select>
+                <select asp-for="CidadeId" class="form-control" asp-items="ViewBag.CidadeId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="BairroId" class="control-label"></label>
-                <select asp-for="BairroId" class ="form-control" asp-items="ViewBag.BairroId"></select>
+                <select asp-for="BairroId" class="form-control" asp-items="ViewBag.BairroId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Endereco" class="control-label"></label>
@@ -72,7 +73,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="Sexo" class="control-label"></label>
-                <select asp-for="Sexo" asp-items="Html.GetEnumSelectList<Sexo>()" class="form-control"></select>
+                <select asp-for="Sexo" asp-items="Html.GetEnumSelectList<Sexo>()" class="form-control">
+                    <option selected="selected" value=""></option>
+                </select>
                 <span asp-validation-for="Sexo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -87,7 +90,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="EstadoCivil" class="control-label"></label>
-                <select asp-for="EstadoCivil" class="form-control"></select>
+                <select asp-for="EstadoCivil" asp-items="Html.GetEnumSelectList<EstadoCivil>()" class="form-control">
+                    <option selected="selected" value=""></option>
+                </select>
                 <span asp-validation-for="EstadoCivil" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -111,6 +116,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
+@*@section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+}*@
