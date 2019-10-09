@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HADev.Delivery.Date.Migrations
 {
     [DbContext(typeof(HADeveloperDBContext))]
-    [Migration("20191005143141_EleitorVisita")]
-    partial class EleitorVisita
+    [Migration("20191009124343_Loja")]
+    partial class Loja
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
